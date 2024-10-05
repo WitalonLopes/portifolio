@@ -43,14 +43,50 @@
         overflow-x: hidden;
     }
 
+    .fixed-social {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        width: 100%;
+        height: 60px;
+        font-size: 25px;
+        display: flex;
+        justify-content: end;
+        padding-right: 30px;
+        padding-top: 20px;
+        position: fixed;
+        z-index: 110;
+    }
+
+    .mobile-menu-icon i {
+        cursor: pointer;
+        color: #fff;
+    }
+
+    .mobile-menu-icon i:hover {
+        color: #0568c5;
+        transition: color 0.3s ease-in-out
+    }
+
+    .menu-mobile {
+        color: #fff;
+        position: fixed;
+        z-index: 110;
+    }
+
     .header {
         display: flex;
-        width: auto;
+        width: 0 auto;
     }
 
     .header .logo {
         font-size: 25px;
-        margin-left: 0;
+        margin-left: 0.8rem;
     }
 
     .section {
@@ -235,11 +271,11 @@
         font-size: 14px;
     }
 
-    .name-overlay h1 {
+    .name h1 {
         font-size: 54px;
     }
 
-    .name-overlay h3 {
+    .name h3 {
         font-size: 20px;
     }
 

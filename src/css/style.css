@@ -21,7 +21,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 999
+  z-index: 110;
 }
 
 /*LOGO*/
@@ -52,6 +52,15 @@ body {
   border-radius: 30px;
 }
 
+/*ESTILO MENU MOBILE*/
+.mobile-menu-icon {
+  display: none;
+}
+
+.menu-mobile {
+  display: none;
+}
+
 /*MAIN*/
 .main {
   position: relative;
@@ -64,7 +73,7 @@ body {
   align-items: center;
   padding: 0 20px;
   margin: 0 auto;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 
 #particles-js {
@@ -73,7 +82,7 @@ body {
   background-color: rgb(24, 26, 27);
 }
 
-.name-overlay {
+.name {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -86,31 +95,30 @@ body {
   align-items: center;
 }
 
-.name-overlay .text {
+.name .text {
   display: flex;
   flex-direction: column;
-  /* align-items: start; */
 }
 
-.name-overlay h1 {
+.name h1 {
   font-size: 100px;
   font-family: 'Roboto', sans-serif;
   width: 700px;
 }
 
-.name-overlay h3 {
+.name h3 {
   font-size: 24px;
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
 
 
-.name-overlay .social {
+.name .social {
   margin-top: 10px;
 }
 
 
-.name-overlay .social a {
+.name .social a {
   font-size: 28px;
   margin: 0 10px;
   color: white;
@@ -119,7 +127,7 @@ body {
 }
 
 
-.name-overlay .social a:hover {
+.name .social a:hover {
   color: #0568c5;
   border-radius: 30px;
 }
@@ -341,14 +349,14 @@ body {
 
 /*TECNOLOGIAS*/
 
-.section2 {
+.section-tecnologias {
   max-width: 1400px;
   margin: 0 auto;
   padding: 50px 20px;
   text-align: center;
 }
 
-.section2 h1 {
+.section-tecnologias h1 {
   text-transform: uppercase;
   font-size: 40px;
   margin-bottom: 35px;

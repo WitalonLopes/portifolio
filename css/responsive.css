@@ -1,0 +1,494 @@
+@media (max-width: 1100px) {
+    .portifolio .flex {
+        display: flex;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        margin-top: 30px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .project-container {
+        width: 100%;
+        height: 400px;
+        scroll-snap-align: start;
+        margin-right: 10px;
+    }
+
+    .portifolio {
+        height: 70vh;
+        padding: 20px;
+    }
+
+    .titulo-port {
+        font-size: 28px;
+    }
+
+    .project-container .img-port {
+        width: 100%;
+        height: 300px;
+        border-radius: 41px;
+    }
+
+    .overlay {
+        font-size: 18px;
+    }
+
+    .links a {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 780px) {
+    
+    body {
+        background-color: #181a1b;
+    }
+
+    #particles-js {
+        position: relative;
+        height: 95dvh;
+        margin-top: 70px;
+    }
+
+    .hamburger {
+        display: block;
+        z-index: 2;
+    }
+
+
+    .menu .nav-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100dvh;
+        padding: 0;
+        background-color: #181a1b;
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    .nav-list a {
+        font-size: 24px;
+        opacity: 0;
+    }
+
+    .nav-list li:nth-child(1) a {
+        transition: 0.5s 0.2s;
+    }
+
+    .nav-list li:nth-child(2) a {
+        transition: 0.5s 0.4s;
+    }
+
+    .nav-list li:nth-child(3) a {
+        transition: 0.5s 0.6s;
+    }
+
+    /* estilos ativos */
+
+    .menu.active .nav-list {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+
+    .menu.active .nav-list a {
+        opacity: 1;
+    }
+
+    .menu.active .hamburger {
+        position: fixed;
+        top: 26px;
+        right: 16px;
+        border-top-color: transparent;
+    }
+
+    .menu.active .hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    .menu.active .hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    /*MAIN*/
+
+    .name {
+        z-index: 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .name h1 {
+        font-size: 54px;
+        width: 100%;
+    }
+
+    .name h3 {
+        font-size: 22px;
+        width: 100%;
+    }
+
+    .social a {
+        margin: 0 5px;
+        width: 100%;
+    }
+
+    .social a i {
+        font-size: 27px;
+    }
+
+    .fixed-social {
+        display: none;
+    }
+
+    .fixed-social a {
+        display: none;
+        pointer-events: none;
+    }
+
+
+    /*SOBRE MIM COMEÇA AQUI*/
+
+    .section-sobre {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .section-sobre .imagem-sobre {
+        margin: 0;
+        padding: 0;
+    }
+
+    .texto-sobre {
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+    }
+
+    .section-sobre .texto-sobre p {
+        text-align: center;
+        width: 100vw;
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .section-sobre .texto-sobre h1 {
+        width: 100vw;
+        font-size: 28px;
+    }
+
+    .section-sobre .texto-sobre p {
+        width: 100vw;
+    }
+
+    /*ESTILO DO PARALLAX*/
+
+    .parallax-section {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow-x: scroll;
+        background-image: url('../src/img/mountain-6815304_1920.jpg');
+        scroll-snap-type: x mandatory;
+        justify-content: center;
+    }
+
+    .info-boxes {
+        display: flex;
+        height: 100%;
+        position: relative;
+    }
+
+    .info-box {
+        min-width: 300px;
+        margin: 0 10px;
+        padding: 20px;
+        border-radius: 10px;
+        scroll-snap-align: center;
+        flex-shrink: 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .info-boxes .info-box h3 {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 26px;
+        padding-bottom: 15px;
+    }
+
+    .info-boxes .info-box p {
+        display: flex;
+        font-size: 20px;
+    }
+
+    .onda {
+        display: none;
+    }
+
+    .info-box {
+        min-width: 50%;
+        margin: 0 auto;
+    }
+
+    /*TECNOLOGIAS*/
+
+    .icon-wrapper i {
+        font-size: 36px;
+    }
+
+    .tooltip{
+        display: none;
+      }
+
+    /*Footer*/
+
+    .line-footer {
+        margin-top: 18px;
+    }
+
+
+    /*footer final*/
+
+    .rodape {
+        display: flex;
+        width: auto;
+    }
+
+    .logo-footer {
+        /* width: 110px; */
+        margin-left: 16px;
+        display: flex;
+        font-size: 11px;
+    }
+
+    .btn-social {
+        display: flex;
+    }
+
+    .line-baixo {
+        display: flex;
+    }
+
+    .line-baixo {
+        width: 100%;
+        margin-top: 10px;
+        margin: 0;
+    }
+
+
+}
+
+@media (max-width: 385px) {
+    
+    body {
+        background-color: #181a1b;
+    }
+
+    #particles-js {
+        position: relative;
+        height: 95dvh;
+    }
+
+    .hamburger {
+        display: block;
+        z-index: 2;
+    }
+
+
+    .menu .nav-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100dvh;
+        padding: 0;
+        background-color: #181a1b;
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    .nav-list a {
+        font-size: 24px;
+        opacity: 0;
+    }
+
+    .nav-list li:nth-child(1) a {
+        transition: 0.5s 0.2s;
+    }
+
+    .nav-list li:nth-child(2) a {
+        transition: 0.5s 0.4s;
+    }
+
+    .nav-list li:nth-child(3) a {
+        transition: 0.5s 0.6s;
+    }
+
+    /* estilos ativos */
+
+    .menu.active .nav-list {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+
+    .menu.active .nav-list a {
+        opacity: 1;
+    }
+
+    .menu.active .hamburger {
+        position: fixed;
+        top: 26px;
+        right: 16px;
+        border-top-color: transparent;
+    }
+
+    .menu.active .hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    .menu.active .hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    /*MAIN*/
+
+    .name {
+        z-index: 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .name h1 {
+        font-size: 54px;
+        width: 100%;
+    }
+
+    .name h3 {
+        font-size: 22px;
+        width: 100%;
+    }
+
+    .social a {
+        margin: 0 5px;
+        width: 100%;
+    }
+
+    .social a i {
+        font-size: 27px;
+    }
+
+    /*SOBRE MIM COMEÇA AQUI*/
+
+    .section-sobre {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .section-sobre .imagem-sobre {
+        margin: 0;
+        padding: 0;
+    }
+
+    .texto-sobre {
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+    }
+
+    .section-sobre .texto-sobre p {
+        text-align: center;
+        width: 100vw;
+        height: 100%;
+        font-size: 17px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .section-sobre .texto-sobre h1 {
+        width: 100vw;
+        font-size: 25px;
+        margin-bottom: 8px;
+    }
+    
+    /*ESTILO DO PARALLAX*/
+
+    .parallax-section {
+        position: static;
+        width: 100%;
+        height: 100vh;
+        overflow-x: scroll;
+        background-image: url('../src/img/mountain-6815304_1920.jpg');
+        scroll-snap-type: x mandatory;
+        justify-content: center;
+    }
+
+    /*AQUI COMEÇA RESPONSIVIDADE DOS PROJETOS*/
+
+    .portifolio .flex {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+    }
+
+    .project-container {
+        width: 100%;
+        scroll-snap-align: start;
+        margin-right: 10px;
+    }
+
+    .portifolio {
+        height: auto;
+        padding: 20px;
+    }
+
+    .titulo-port {
+        font-size: 28px;
+    }
+
+    .project-container .img-port {
+        width: 100%;
+        height: 300px;
+        border-radius: 41px;
+    }
+
+    .overlay {
+        font-size: 18px;
+    }
+
+    .links a {
+        margin-bottom: 10px;
+    }
+
+}

@@ -443,7 +443,7 @@
     /*ESTILO DO PARALLAX*/
 
     .parallax-section {
-        position: static;
+        position: relative;
         width: 100%;
         height: 100vh;
         overflow-x: scroll;

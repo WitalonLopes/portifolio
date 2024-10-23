@@ -102,7 +102,7 @@
     /* estilos ativos */
 
     .menu.active .nav-list {
-        clip-path: circle(1500px at 150% 15%);
+        clip-path: circle(1500px at 90% -15%);
         pointer-events: all;
     }
 

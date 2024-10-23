@@ -52,6 +52,11 @@
         margin-top: 70px;
     }
 
+    .logo {
+        font-size: 28px;
+        color: #fff;
+      }
+
     .hamburger {
         display: block;
         z-index: 2;
@@ -69,6 +74,7 @@
         clip-path: circle(100px at 90% -15%);
         transition: 1s ease-out;
 
+        
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
@@ -77,7 +83,7 @@
     }
 
     .nav-list a {
-        font-size: 24px;
+        font-size: 34px;
         opacity: 0;
     }
 
@@ -96,12 +102,20 @@
     /* estilos ativos */
 
     .menu.active .nav-list {
-        clip-path: circle(1500px at 90% -15%);
+        clip-path: circle(1500px at 150% 15%);
         pointer-events: all;
     }
 
     .menu.active .nav-list a {
         opacity: 1;
+        font-size: 28px;
+    }
+
+    .menu.active .nav-list {
+        width: 200px;
+        top: 0;
+        right: 0;
+        background-color: rgba(24, 26, 27, 0.986);
     }
 
     .menu.active .hamburger {

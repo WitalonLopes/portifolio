@@ -176,6 +176,10 @@ body {
   z-index: 110;
 }
 
+.rolagem {
+  background-color: rgba(24, 26, 27, 0.911);
+}
+
 .center-header {
   height: 60px;
   display: flex;

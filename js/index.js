@@ -10,6 +10,39 @@ function expandir() {
   nav.classList.toggle("active");
 }
 
+//MENU LATERAL INATIVO
+const navMenu = document.querySelector('nav.menu')
+
+const navLink1 = document.querySelector('.nav__link1')
+const navLink2 = document.querySelector('.nav__link2')
+const navLink3 = document.querySelector('.nav__link3')
+
+ navLink1.addEventListener('click', () => {
+  const activeExiste = navMenu.classList.contains("active")
+
+  if(activeExiste){
+    navMenu.classList.remove("active")
+  }
+  })
+
+  navLink2.addEventListener('click', () => {
+    const activeExiste = navMenu.classList.contains("active")
+  
+    if(activeExiste){
+      navMenu.classList.remove("active")
+    }
+    })
+
+    navLink3.addEventListener('click', () => {
+      const activeExiste = navMenu.classList.contains("active")
+    
+      if(activeExiste){
+        navMenu.classList.remove("active")
+      }
+      })
+
+
+
 //SCROLL NO HEADER TRANSPARENTE 
 
 document.addEventListener('scroll', () => {

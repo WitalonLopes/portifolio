@@ -112,9 +112,6 @@
     }
 
     .menu.active .nav-list {
-        width: 200px;
-        top: 0;
-        right: 0;
         background-color: rgba(24, 26, 27, 0.986);
     }
 
